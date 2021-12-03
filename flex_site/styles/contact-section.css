@@ -1,0 +1,80 @@
+.contact-section {
+     width: 100%;
+     padding: 100px 0;
+}
+
+.contact-section .section-intro {
+     text-align: center;
+}
+
+.contact-section .contact-container {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+}
+
+.contact-section .contact-container .left-content {
+     width: 58%;
+}
+
+.contact-section .contact-container .left-content .section-intro {
+     text-align: left;
+}
+
+.contact-section .contact-container .left-content .contact-form .row {
+     display: flex;
+     margin-bottom: 10px;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.contact-section .contact-container .left-content .contact-form .row input,
+.contact-section .contact-container .left-content .contact-form .row select,
+.contact-section .contact-container .left-content .contact-form textarea {
+     width: 48%;
+     padding: 10px 15px;
+     background: transparent;
+     color: var(--primary-accent);
+     font-family: 'Montserrat', sans-serif;
+     border: 1px solid var(--primary-accent);
+}
+.contact-section .contact-container .left-content .contact-form textarea {
+     width: 100%;
+     resize: vertical;
+     min-height: 100px;
+     margin-bottom: 10px;
+}
+
+.contact-section .contact-container .left-content .contact-form button {
+     width: 100%;
+}
+
+.contact-section .contact-container .right-content {
+     width: 35%;
+}
+
+.contact-section .contact-container .right-content .details-container .detail {
+     padding: 50px 25px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+     transition: var(--transition);
+     border: 1px solid var(--primary-accent);
+}
+
+.contact-section .contact-container .right-content .details-container .detail:hover {
+     transform: scale(1.01) translateY(-10px);
+     background: var(--primary-gradient);
+}
+
+.contact-section .contact-container .right-content .details-container .detail h2 {
+     letter-spacing: 2px;
+}
+
+.contact-section .contact-container .right-content .details-container .detail a {
+     color: var(--secondary-text);
+     transition: var(--transition);
+}
+
+.contact-section .contact-container .right-content .details-container .detail a:hover {
+     color: var(--primary-accent);
+}

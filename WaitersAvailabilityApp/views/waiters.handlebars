@@ -1,0 +1,61 @@
+<div class="background-image">
+        <div class="overlay">
+        <div class="container">
+         <div class="container header center ">
+        <h4>WAITERS AVAILABILITY APP</h4>
+        <h1 class="center">Okuhle's Food Bar</h1>
+         <p>Hello, {{this.name}} please select the days you can work on from the options provided below. A minimum of 3days is allowed.</p>
+    </div>
+        <form action="/waiters/{{this.name}}" method="POST">
+                <div class="content">
+
+                       
+
+
+                        <div class="boxes">
+
+
+                                {{#each day}}
+                                <input type="checkbox" class="dayCheck" name="days" value="{{this.id}}" {{this.state}}>
+                                <label class="days" for="all">{{this.day}}</label><br>
+                                {{/each}}
+
+                        </div>
+                        <div class="error">
+                                {{#if messages}}
+                                {{messages.error}}
+                                {{/if}}
+                        </div>
+                        <div class="success">
+                                {{#if messages}}
+                                {{messages.success}}
+                                {{/if}}
+                        </div>
+
+
+                     
+                        <div class="subtn">
+
+                                <button type="submit">Submit Your Selected</button>
+                        </div>
+
+        </form>
+</div>
+</div>
+
+</div>
+
+
+<script>
+        var errors = document.querySelector(".error")
+
+        setTimeout(function () {
+                errors.innerHTML = ""
+        }, 2000)
+
+        var errors = document.querySelector(".success")
+
+        setTimeout(function () {
+                errors.innerHTML = ""
+        }, 2000)
+</script>

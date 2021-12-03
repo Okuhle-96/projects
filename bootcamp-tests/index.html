@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+    <script src="greet.js"></script>
+    <script src="test/greet.test.js"></script>
+
+    <script src="countAllFromTown.js"></script>
+    <script src="test/countAllFromTown.test.js"></script>
+
+    <script src="countAllPaarl.js"></script>
+    <script src="test/countAllPaarl.test.js"></script>
+
+    <script src="countRegNumber.js"></script>
+    <script src="test/countRegNumber.test.js"></script>
+
+    <script src="findItemsOver.js"></script>
+    <script src="test/findItemsOver.test.js"></script>
+
+    <script src="findItemsOver20.js"></script>
+    <script src="test/findItemsOver20.test.js"></script>
+
+    <script src="fromWhere.js"></script>
+    <script src="test/fromWhere.test.js"></script>
+
+    <script src="isFromBellville.js"></script>
+    <script src="test/isFromBellville.test.js"></script>
+
+    <script src="isWeekday.js"></script>
+    <script src="test/isWeekday.test.js"></script>
+
+    <script src="mostProfitableDepartment.js"></script>
+    <script src="test/mostProfitableDepartment.test.js"></script>
+
+    <script src="regCheck.js"></script>
+    <script src="test/regCheck.test.js"></script>
+
+    <script src="totalPhoneBill.js"></script>
+    <script src="test/totalPhoneBill.test.js"></script>
+
+    <script src="transportFee.js"></script>
+    <script src="test/transportFee.test.js"></script>
+
+    <script src="yearsAgo.js"></script>
+    <script src="test/yearsAgo.test.js"></script>
+
+
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+
+</html>

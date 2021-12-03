@@ -1,0 +1,260 @@
+.red {
+  background-color:burlywood;
+}
+
+.green {
+  background-color: darkolivegreen;
+}
+
+.blue {
+  background-color: slateblue;
+}
+
+.background-image {
+  background-image: url("./resturant.jpg");
+  height: 910px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.522);
+  height: 910px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 20px; */
+}
+
+.header h1 {
+  font-size: 75px;
+  font-weight: bolder;
+  color: white;
+}
+
+.header h4 {
+  padding-top: 60px;
+  /* padding-left: 80px; */
+  /* padding-right: 50px; */
+  color: #d4af37;
+  font-weight: bolder;
+}
+
+.header p {
+    color: wheat;
+    text-shadow: 1px solid black;
+    padding-bottom: 40px;
+}
+
+.tags {
+    display: flex;
+}
+
+.tag {
+    background-color: #d4af37;
+    margin: 20px;
+    padding: 30px;
+    height: 380px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px chocolate;
+}
+
+.tag h4 {
+    font-weight: bolder;
+    padding-left: 10px;
+    border-left: 10px solid white;
+   
+}
+
+.tag p {
+    font-size: 15px;
+}
+
+.middlem {
+    margin-top: 70px;
+}
+
+.boxes {
+   background-color: #d4af37;
+   width: 30%;
+   margin: auto;
+   margin-top: -30px;
+   padding: 40px;
+
+}
+.boxes label {
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+}
+
+.subtn button {
+    width: 40%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 25px;
+    text-align: center;
+    border: 0;
+    border-radius: 0;
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+    margin: 20px;
+}
+
+.flex span {
+    margin-right: 10px;
+    padding: 20px;
+}
+
+
+.enough {
+    display: flex;
+    /* margin-bottom: 30px; */
+   
+}
+
+
+
+
+@media only screen and (min-width: 200px) {
+ 
+  .boxes {
+    text-align: center;
+  }
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+  }
+  ul.topnav li {
+    float: left;
+  }
+  .instructions {
+    text-align: center;
+  }
+  ol {
+    text-align: center;
+    display: inline-block;
+  }
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ul.topnav li a:hover:not(.active) {
+    background-color: rgb(48, 48, 48);
+  }
+  ul.topnav li.right {
+    float: right;
+  }
+  .main {
+    text-align: center;
+    margin: auto;
+    padding: 10%;
+    position: static;
+  }
+  input {
+    text-align: center;
+  }
+  .error {
+    font-size: 15px;
+    color: red;
+  }
+
+  .success {
+    font-size: 15px;
+    color: darkolivegreen;
+  }
+  .enough {
+  
+    width: auto;
+    text-align: center;
+  }
+  .content {
+    margin: auto;
+    text-align: center;
+    padding: 2em;
+  }
+  .names {
+    text-align: center;
+  }
+  .subtn {
+    padding: 2em;
+  }
+  input.dayCheck {
+    width: 1em;
+   
+    height: 1em;
+  }
+  label .days {
+    font-size: larger;
+    margin-top: -10px;
+  }
+  table {
+      margin-top: 30px;
+    /* margin-left: 20em; */
+    /* margin: auto; */
+    text-align: center;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+  }
+  .reset {
+    text-align: center;
+    display: flex;
+    padding: 2em;
+    width: 60%;
+    /* margin: auto; */
+    /* margin-left: 40em; */
+  }
+  .reset button {
+   
+    border-radius: 0em;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 25px;
+    border: 0;
+    margin: 20px;
+   
+
+  }
+
+  th {
+    border: 3px solid white;
+   color: whitesmoke;
+    padding: 20px;
+  }
+
+  td {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    text-align: left;
+    padding: 20px;
+    color: white;
+  }
+  li {
+    list-style: none;
+    text-align: left;
+    color: white;
+    padding: 5px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}

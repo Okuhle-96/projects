@@ -1,0 +1,95 @@
+.services-section {
+    padding: 0;    
+}
+
+.services-section .service-banner {
+    padding: 40px 0;
+    color: #ffffff;
+    text-align: center;
+    background: #45c3d3;
+}
+
+.services-section .service-banner h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.services-section .service-banner h2 span {
+    border-bottom: 3px solid #fff
+}
+
+.services-section .services-container .service {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-section .services-container .service:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.services-section .services-container .service .service-image, 
+.services-section .services-container .service .service-details {
+    width: 50%;
+}
+
+.services-section .services-container .service .service-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.services-section .services-container .service .service-details {
+    padding: 50px;
+}
+
+.services-section .services-container .service .service-details h3 {
+    font-size: 35px;
+    color: #3f4b5e;
+    margin-bottom: 20px;
+}
+
+.services-section .services-container .service .service-details h3 span {
+    color: #45c3d3;
+    border-bottom: 3px solid #45c3d3;
+}
+
+.services-section .services-container .service .service-details ul li:hover span {
+    padding-left: 20px;
+}
+
+.services-section .services-container .service .service-details ul li svg {
+    color: #45c3d3;
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+.services-section .services-container .service .service-details ul li span {
+    color: #8b9aab;
+    transition: all .5s ease-in-out;
+}
+
+/* MEDIA QUERRY FOR SCREENS BETWEEN 0 AND 768PX */
+@media screen and (max-width: 768px) {
+    .services-section .services-container .service {
+        flex-direction: column;
+    }
+    
+    .services-section .services-container .service:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .services-section .services-container .service .service-image, 
+    .services-section .services-container .service .service-details {
+        width: 100%;
+    }
+
+    
+    .services-section .services-container .service .service-details {
+        padding: 5%;
+    }
+
+    .services-section .services-container .service .service-details ul li span {
+        font-size: 15px;
+    }
+}

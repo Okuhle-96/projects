@@ -1,0 +1,77 @@
+.hero-section {
+     width: 100%;
+     min-height: 100vh;
+}
+
+.hero-section .hero-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.hero-section .hero-content {
+     width: 50%;
+     height: 100vh;
+     display: grid;
+     position: relative;
+     place-content: center;
+}
+
+.hero-section .hero-content h1 {
+     margin-bottom: 20px;
+     font-weight: 800;
+     font-size: 80px;
+}
+
+.hero-section .hero-content h1 span {
+     display: block;
+}
+
+.hero-section .hero-content p {
+     width: 70%;
+     margin-bottom: 20px;
+}
+
+.hero-section .hero-content .btns-container {
+     display: flex;
+     justify-content: space-between;
+}
+
+.hero-section .hero-content .btns-container .primary-btn, 
+.hero-section .hero-content .btns-container .secondary-btn {
+     width: 45%;
+}
+
+
+.hero-section .spline-container {
+     width: 50%;
+     height: 100vh;
+}
+
+.hero-section .spline-container svg {
+     width: 90%;
+     height: 90%;
+}
+
+.hero-section .instructions-container {
+     left: 50%;
+     bottom: 50px;
+     position: absolute;
+     transform: translateX(-50%);
+}
+
+.hero-section .instructions-container span {
+     padding: 5px;
+     margin: 0 5px;
+     cursor: pointer;
+     border-radius: 5px;
+     color: var(--primary-text);
+     transition: all .5s ease-in-out;
+     background: var(--primary-accent);
+}
+
+@media screen and (max-width: 600px) {
+     .hero-section .instructions-container {
+         display: none;
+     }
+}

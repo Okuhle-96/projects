@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Filter widget</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js" integrity="sha256-hSzapznWRy/aOZkctlN03an9DxCLlN8ZCQS0lxntiHg=" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
+
+	<script type="text/x-template" class="colorTemplate">
+
+		{{#each color}}
+		<option value="{{this}}">{{this}}</option>
+			{{/each}}
+
+	</script>
+
+	<script type="text/x-template" class="makeTemplate">
+
+		{{#each color}}
+		<option value="{{this}}">{{this}}</option>
+			{{/each}}
+
+	</script>
+
+	<script type="text/x-template" class="widgetTemplate">
+
+		{{#each widget}}
+	
+		<td>{{this}}</td>
+		<td>{{this}}</td>
+		<td>{{this.make}}</td>
+		<td>{{this.reg_number}}</td>
+		<td>{{this.price}}</td>
+		
+	{{/each}}
+	
+	</script>
+	
+</head>
+<body>
+	<h1>Filter widget</h1>
+	<div class="colors">
+		<select name="color-selction">
+			<option value="colorr">Select All Colors</option>
+		</select>
+	</div>
+
+	<div class="makes"> 
+		<select name="make-selction">
+			<option value="makes">Select All Brands</option>
+		</select>
+	</div>
+
+	<div>
+		<input type="submit" value="filter" class="filter" name="filter">
+	</div>
+
+	<div>
+		<table>
+			<tr>
+				<th>Color</th>
+				<th>Make</th>
+				<th>Model</th>
+				<th>Registration</th>
+				<th>Price</th>
+			</tr>
+			<tr class="widgets">
+			
+			</tr>
+			</table>
+	</div>
+	
+	<script src="appp.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+@import "../main.scss";
+
+.hero-section {
+     z-index: 1;
+     width: 100%;
+     padding: 5%;
+     margin-top: 100px;
+     @extend %flex-start;
+     height: calc(100vh - 100px);
+     
+     @media (min-width: 700px) {
+          padding: 5% 0 5% 15%;
+     }
+
+     .cta-container {
+          z-index: 0;
+          width: 80%;
+          height: 100%;
+          padding-top: 150px;
+          position: relative;
+          
+
+          @media (min-width: 700px) {
+               max-width: 600px;
+          }
+          
+          h1 {
+               font-size: 35px;
+               margin-bottom: 20px;
+               
+               @media (min-width: 600px) {
+                    font-size: 40px;
+               }
+               
+               @media (min-width: 700px) {
+                    font-size: 45px;
+               }
+               
+               @media (min-width: 800px) {
+                    font-size: 50px;
+               }
+          }
+     }
+}
+
+.portfolio-section {
+     padding: 100px 0;
+
+     .heading {
+          font-size: 30px;
+          max-width: 300px;
+          
+          @media (min-width: 600px) {
+               font-size: 35px;
+               max-width: 350px;
+          }
+     }
+
+     .portfolio-container {
+          @extend %responsive-row;
+     
+          .portfolio-item {
+               width: 100%;
+               height: 330px;
+               margin: 0 auto;
+               max-width: 300px;
+               overflow: hidden;
+               margin-bottom: 30px;
+
+               &:hover {
+                    .description {
+                         transform: translateY(-332px);
+                    }
+               }
+
+               img {
+                    width: 300px;
+                    height: 300px;
+               }
+
+               p {
+                    font-size: 20px;
+                    font-weight: 700;
+               }
+
+               .description {
+                    width: 100%;
+                    height: 300px;
+                    padding: 10px;
+                    color: $color-white;
+                    @extend %transition;
+                    transform: translateY(10px);
+                    background: $color-secondary;
+               }
+          }
+     }
+}
+
+.services-section {
+     padding: 100px 0;
+     color: $color-white;
+     background: $color-secondary;
+     
+     h3 {
+          font-size: 30px;
+     }
+     
+     .services-container {
+          margin-top: 50px;
+          @extend %responsive-row;
+          
+          .service {
+               text-align: center;
+               margin-bottom: 30px;
+               
+               h6 {
+                    font-size: 20px;
+                    color: $color-white;
+               }
+
+               button {
+                    padding: 10px;
+                    margin-top: 20px;
+                    background: transparent;
+                    border: 2px solid $color-white;
+
+                    a {
+                         color: $color-white;
+                    }
+               }
+          }
+     }
+}
+
+.team-section {
+     padding: 100px 0;
+
+     .heading {
+          width: 230px;
+          font-size: 30px;
+     }
+
+     .team-container {
+          @extend %responsive-row;
+
+          .team-member {
+               width: 100%;
+               height: 330px;
+               margin: 0 auto;
+               max-width: 300px;
+               text-align: center;
+               margin-bottom: 50px;
+
+               img {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 20px;
+               }
+
+               h5 {
+                    font-size: 15px;
+               }
+
+               h6 {
+                    font-size: 15px;
+                    color: $color-primary;
+               }
+          }
+     }
+}
+
+#partners {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     .logos {
+          display: flex;
+          align-content: center;
+          align-items: center;
+          justify-content: center;
+
+     }
+
+     .logo-one {
+          width: 10%;
+          height: 10%;
+     }
+}
+
+.modal-section {
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     display: none;
+     z-index: 99999;
+     position: fixed;
+     @extend %center;
+     color: $color-white;
+     background: rgba($color-secondary, .8); 
+     
+     .container {
+          height: 100%;
+          @extend %center;
+
+          .team-modal {
+               width: 100%;
+               position: relative;
+               padding: 20px;
+               border-radius: 5px;
+               @extend %responsive-row;
+               background: $color-secondary;
+          
+               .team-image {
+                    width: 100%;
+                    max-width: 250px;
+                    
+                    @media (min-width: 850px) {
+                         width: 50%;
+                         max-width: 400px;
+                    }
+          
+                    img {
+                         width: 100%;
+                    }
+               }
+     
+               .team-details {
+                    width: 100%;
+                    
+                    @media (min-width: 850px) {
+                         width: 50%;
+                         max-width: 500px;
+                    }
+     
+                    .close-icon {
+                         top: 0;
+                         right: 0;
+                         width: 50px;
+                         cursor: pointer;
+                         position: absolute;
+                    }
+     
+                    h5 {
+                         font-size: 25px;
+                    }
+                    
+                    h6 {
+                         font-size: 20px;
+                         margin-bottom: 10px;
+                    }
+     
+                    .socials-container {
+                         margin-bottom: 10px;
+                         @extend %flex-start;
+     
+                         img {
+                              width: 30px;
+                              margin-right: 10px;
+                         }
+                    }
+     
+                    ul {
+                         margin-left: 15px;
+                         list-style: circle;
+
+                         li {
+                              margin-bottom: 10px;
+                         }
+                    }
+               }
+          }
+     }
+}

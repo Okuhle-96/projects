@@ -1,0 +1,89 @@
+.contact-section {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../../images/contact-banner.jfif) no-repeat center;
+    background-size: cover;
+}
+
+.contact-section .contact-container {
+    display: flex;
+    border-radius: 5px;
+    background: #ffffff;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-section .contact-container .contact-details {
+    width: 40%;
+    padding: 50px;
+}
+
+.contact-section .contact-container .contact-details h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #3f4b5e;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.contact-section .contact-container .contact-details h2 span {
+    color: #45c3d3;
+    border-bottom: 3px solid #45c3d3;
+}
+
+.contact-section .contact-container .form-container {
+    width: 60%;
+    padding: 50px;
+}
+
+.contact-section .contact-container .form-container .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.contact-section .contact-container .form-container .row input,
+.contact-section .contact-container .form-container .row select,
+.contact-section .contact-container .form-container .row textarea {
+    border: none;
+    padding: 15px;
+    display: block;
+    font-size: 15px;
+    color: #3f4b5e;
+    border-radius: 3px;
+    background: #f3f5f8;
+    width: calc(100% / 3 - 5px);
+}
+
+.contact-section .contact-container .form-container .row textarea,
+.contact-section .contact-container .form-container button {
+    width: 100%;
+}
+
+
+/* MEDIA QUERRY FOR SCREENS BETWEEN 0 AND 992PX */
+@media screen and (max-width: 992px) {
+    .contact-section .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-section .contact-container .contact-details,
+    .contact-section .contact-container .form-container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .contact-section .contact-container .contact-details h2 {
+        font-size: 25px;
+    }
+
+    .contact-section .contact-container .form-container .row {
+        flex-direction: column;
+    }
+
+    .contact-section .contact-container .form-container .row input, 
+    .contact-section .contact-container .form-container .row select, 
+    .contact-section .contact-container .form-container .row textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

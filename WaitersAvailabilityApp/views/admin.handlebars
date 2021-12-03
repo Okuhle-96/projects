@@ -1,0 +1,59 @@
+<div class="background-image">
+    <div class="overlay">
+      <div class="container header center ">
+        <h4>WAITERS AVAILABILITY APP</h4>
+        <h1 class="center">Okuhle's Food Bar</h1>
+    </div>
+    <form action="/admin" method="get">
+
+        <div class="enough container">
+            <div class="flex">
+                <span  style="color:slateblue;" class="blue">dhfgd</span><p <p style="color:slateblue; font-weight:bolder;">More Waiters Needed</p>
+            </div>
+            <div class="flex">
+                <span  style="color:darkolivegreen;" class="green">dhfgd</span><p style="color:darkolivegreen; font-weight:bolder;" >Have Enough Waiters</p>
+            </div>
+            <div class="flex">
+                <span  style="color:burlywood;" class="red">dhfgd</span><p <p style="color:burlywood;font-weight:bolder;" >Too Many Waiters</p>
+            </div>
+
+        </div>
+        <table class="center">
+            <thead>
+                <tr  class="center">
+                    {{#each shifts}}
+                    <th class="{{color}}">{{day}}</th>
+                    {{/each}}
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr>
+                    {{#each shifts}}
+                    <td>
+                        <ul>
+                            {{#each waiters}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+
+                    </td>
+                    {{/each}}
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+
+    <form action="/reset" method="get">
+        <div class="reset container">
+            <button type="submit">Reset Waiters Names</button>
+            <br>
+            <button  type="submit"><a href="/waiters">Go Back to Waiters</a></button>
+
+        </div>
+
+    </form>
+    </div>
+</div>
